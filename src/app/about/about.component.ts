@@ -1,7 +1,7 @@
+import { DataService } from '../data.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-about',
@@ -9,10 +9,10 @@ import { DataService } from '../data.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  title = "About Page";
   goals: any;
 
-  constructor(private route: ActivatedRoute, private router: Router, private _date: DataService) {
+  constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) {
       this.route.params.subscribe(res => console.log(res.id));
   }
   ngOnInit() {

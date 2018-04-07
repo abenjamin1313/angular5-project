@@ -1,6 +1,7 @@
+import { DataService } from '../data.service';
 import { Component, OnInit } from '@angular/core';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
-import { DataService } from '../data.service';
+
 
 @Component({
   selector: 'app-home',
@@ -36,7 +37,7 @@ export class HomeComponent implements OnInit {
   goalText: string = 'My first life goal';
   goals = [];
 
-  constructor(private _date: DataService) { }
+  constructor(private _data: DataService) { }
 
   ngOnInit() {
     this._data.goal.subscribe(res => this.goals = res);
