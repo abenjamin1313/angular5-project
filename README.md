@@ -1,4 +1,4 @@
-# AdamSite
+# angular5 project with component routing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
