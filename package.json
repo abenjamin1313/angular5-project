@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test --single-run -code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "karma-spec-reporter": "0.0.32",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
